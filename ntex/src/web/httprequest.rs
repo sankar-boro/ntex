@@ -330,8 +330,6 @@ impl HttpRequestPool {
 mod tests {
     use super::*;
     use crate::http::{header, StatusCode};
-    use crate::router::ResourceDef;
-    use crate::web::dev::ResourceMap;
     use crate::web::test::{call_service, init_service, TestRequest};
     use crate::web::{self, App, HttpResponse};
 

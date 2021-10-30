@@ -697,7 +697,7 @@ mod tests {
     use crate::util::{Bytes, Ready};
     use crate::web::middleware::DefaultHeaders;
     use crate::web::request::WebRequest;
-    use crate::web::test::{call_service, init_service, read_body, TestRequest};
+    use crate::web::test::{call_service, init_service, TestRequest};
     use crate::web::DefaultError;
     use crate::web::{self, guard, App, HttpRequest, HttpResponse};
 

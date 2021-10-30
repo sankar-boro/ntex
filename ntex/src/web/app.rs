@@ -628,8 +628,8 @@ mod tests {
     use crate::http::header::{self, HeaderValue};
     use crate::http::{Method, StatusCode};
     use crate::service::{fn_service, Service};
-    use crate::util::{Bytes, Ready};
-    use crate::web::test::{call_service, init_service, read_body, TestRequest};
+    use crate::util::{Ready};
+    use crate::web::test::{call_service, init_service, TestRequest};
     use crate::web::{
         self, middleware::DefaultHeaders, request::WebRequest, DefaultError,
         HttpRequest, HttpResponse,

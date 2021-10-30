@@ -129,9 +129,9 @@ impl<Err: ErrorRenderer> ServiceConfig<Err> {
 mod tests {
     use super::*;
     use crate::http::{Method, StatusCode};
-    use crate::web::test::{call_service, init_service, read_body, TestRequest};
-    use crate::web::{self, App, HttpRequest, HttpResponse};
-    use crate::{util::Bytes, Service};
+    use crate::web::test::{call_service, init_service, TestRequest};
+    use crate::web::{self, App, HttpResponse};
+    use crate::{Service};
 
     #[crate::rt_test]
     async fn test_configure_data() {
