@@ -1,6 +1,7 @@
 use std::io::{self, Read, Write};
 use std::pin::Pin;
 use std::task::{Context, Poll};
+use std::io::prelude::*;
 
 use brotli2::write::{BrotliDecoder, BrotliEncoder};
 use derive_more::Display;

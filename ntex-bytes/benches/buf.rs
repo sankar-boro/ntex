@@ -53,12 +53,9 @@ impl Buf for TestBuf {
         assert!(self.pos <= self.buf.len());
         self.next_readlen();
     }
-    fn bytes(&self) -> &[u8] {
-        if self.readlen == 0 {
-            Default::default()
-        } else {
-            &self.buf[self.pos..self.pos + self.readlen]
-        }
+
+    fn chunk(&self) -> &[u8] {
+        self.buf
     }
 }
 
@@ -86,9 +83,9 @@ impl Buf for TestBufC {
     fn advance(&mut self, cnt: usize) {
         self.inner.advance(cnt)
     }
-    #[inline(never)]
-    fn bytes(&self) -> &[u8] {
-        self.inner.bytes()
+
+    fn chunk(&self) -> &[u8] {
+        self.inner.buf
     }
 }
 
