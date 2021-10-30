@@ -31,3 +31,5 @@
 This project is licensed under
 
 * MIT license ([LICENSE](LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+
+## s4nk4r
